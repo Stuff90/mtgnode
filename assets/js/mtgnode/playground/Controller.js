@@ -10,6 +10,7 @@
 
 ;(function($, w, domino, undefined){
   "use strict";
+  $('html, body').height('100%').height('100%');
 
   domino.settings({verbose: true});
   var _modules = {};

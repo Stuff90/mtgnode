@@ -81,6 +81,28 @@ block body
           div#bottom_graveyard.graveyard-emplacement.bottom
           div#bottom_deck.deck-emplacement.bottom
           div#bottom_hand.hand-emplacement.bottom
+      div#phases_block
+        div#phase_switcher_previous.phase_switcher
+          a <
+        ul#phases_block_begining.phases_block_category
+          li.phase untap
+          li.phase upkeep
+          li.phase draw
+        ul#phases_block_main_first.phases_block_category
+          li.phase main
+        ul#phases_block_combat.phases_block_category
+          li.phase begining
+          li.phase declare attackers
+          li.phase declare blockers
+          li.phase damage
+          li.phase end
+        ul#phases_block_main_second.phases_block_category
+          li.phase main
+        ul#phases_block_main_ending.phases_block_category
+          li.phase end
+          li.phase cleanup
+        div#phase_switcher_next.phase_switcher
+          a >
 
 block modals
   mixin deck_choice_modal()
